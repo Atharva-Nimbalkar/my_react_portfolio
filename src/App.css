@@ -1,38 +1,236 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+
+
+:root{
+  --sidebar-flex:1.5;
+  --rightSideCon-flex:6;
+  --fontsize-p:1.2rem;
+  --fontsize-nav:1.6rem;
+  --typing-font:3rem;
+}
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Raleway';
+}
+
+.App{
+display: flex;
+width: 100vw;
+min-height: 100vh;
+background-color: antiquewhite;
+}
+
+/* navbar and Home */
+.rightSideCon{
+  padding: 100px;
+  background-color: #f4f5f9;
+  flex:var(--rightSideCon-flex)
+}
+.home
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.pic
+{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+}
+.typingeffect
+{
+  font-size: var(--typing-font);
+  margin-bottom: 30px;
+}
+nav
+{
+padding:60px 30px 0px 30px ;
+flex:var(--sidebar-flex);
+background: rgb(238,103,143);
+background: linear-gradient(180deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
+}
+
+nav ul
+{
+  font-size:var(--fontsize-nav) ;
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+  color: white !important;
+}
+nav ul li
+{
+  margin:40px;
+}
+
+.active
+{
+font-weight: bolder;
+}
+
+footer{
+  /* position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 90px;
+  background-color: #D0DAEE; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Change height to "auto" to accommodate variable content */
+  background-color: #D0DAEE;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;
+  justify-content: center;
+}
+/* social .js */
+div .social
+{
+/* position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #D0DAEE;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: flex;
+  align-items: center;
+  color: red;
+}
+
+.social .icon
+{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 60px; */
+  font-size: 25px;
+  /* color: #9a9b9c; */
+  margin: 0 10px; /* Adjust spacing between icons */
+  cursor: pointer;
+}
+.footext li{
+  color: rgb(172, 21, 172);
+  margin-right: 10px;
+  list-style: none;
+}
+.insta{
+  color:red;
+}
+.x{
+  color: rgb(39, 148, 202);
+}
+.social .icon:hover
+{
+color: pink;
+}
+
+
+/* about js */
+.subtopic
+{
+margin:10px 10px 30px 10px !important;
+}
+p
+{
+font-size: var(--fontsize-p);
+}
+h1,h2,h3,h4,p
+{
+margin: 10px;
+}
+
+.ed-con{
+  display: flex; /* Arrange children horizontally */
+  flex-direction: column; /* Wrap to a new line if space is insufficient */
+  /* align-items: center; */
+  gap: 20px;
+  /* justify-content: space-between; Distribute children with space between */
+}
+/* edcard  */
+.edcard
+{
+border: 1px solid #9a9b9c;
+  padding: 10px;
+  margin: 10px; /* Adjust margin spacing as needed */
+  width: 50%;
+  height: 25%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.edcard:hover
+{
+background-color: #ffffff;
+  color: #1b1d20;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+/* skills */
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.skills ul li
+{
+  list-style-type:none;
+  margin:30px;
+  
+}
+
+/* contact */
+div .Ebtn{
+  color: blueviolet;
+  background-color: blanchedalmond;
+  padding: 5px 10px;
+  margin: 10px 10px ;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media all and (max-width: 450px) {
+  :root {
+    --fontsize-nav:1rem;
+    --sidebar-flex:0;
+    --typing-font:2rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App
+  {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .sidebar
+  {
+    padding: 30px;
+    background: rgb(238,103,143);
+    background: linear-gradient(90deg, rgba(238,103,143,1) 50%, rgba(132,124,252,1) 80%);
+  }
+  .rightSideCon
+  {
+    padding: 50px ;
+  }
+  nav ul
+  {
+    display: flex;
+  }
+  nav ul li
+  {
+    margin: 10px;
   }
 }
