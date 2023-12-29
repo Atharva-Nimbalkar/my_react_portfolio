@@ -31,13 +31,26 @@ background-color: antiquewhite;
   background-color: #f4f5f9;
   flex:var(--rightSideCon-flex)
 }
+
 .home
 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
+  /* background-color: rgb(164, 74, 68); */
+  background-color: rgb(220, 164, 160);
+
+}
+.about{
+  background-color: rgb(220, 164, 160);
+}
+.skills{
+  background-color: rgb(220, 164, 160);
+}
+
+.contact{
+  background-color: rgb(220, 164, 160);
 }
 .pic
 {
@@ -114,14 +127,9 @@ div .social
 
 .social .icon
 {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 60px; */
+ 
   font-size: 25px;
-  /* color: #9a9b9c; */
-  margin: 0 10px; /* Adjust spacing between icons */
+  margin: 0 10px;
   cursor: pointer;
 }
 .footext li{
@@ -139,7 +147,6 @@ div .social
 {
 color: pink;
 }
-
 
 /* about js */
 .subtopic
@@ -234,3 +241,11 @@ div .Ebtn{
     margin: 10px;
   }
 }
+
+.btn{
+  background-color: rgb(189, 94, 189);
+  margin: 10px 2px;
+  padding: 10px 10px;
+  font-size: larger;
+}
+

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaTwitter,FaInstagram, FaGithub, FaLinkedin} from 'react-icons/fa';
+import {SiHashnode} from 'react-icons/si';
 
 function Social() {
   return (
@@ -18,6 +19,9 @@ function Social() {
         </a>
         <a href={"https://github.com/Atharva-Nimbalkar"} target="_blank" rel="noopener noreferrer">
         <FaGithub className="icon insta"/>
+        </a>
+        <a href={"https://imatharva2753.hashnode.dev/"} target="_blank" rel="noopener noreferrer">
+        <SiHashnode className="icon insta"/>
         </a>
     </div>
     <div className="footext">
