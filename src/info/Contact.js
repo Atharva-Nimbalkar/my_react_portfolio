@@ -6,7 +6,7 @@ export default function Contact() {
 const handleEmailButtonClick=()=>{
   window.location.href = `mailto:${emailAddress}`
 }
-// "react-typing-effect": "^2.0.5",
+
   return (
     <>
         <div className='rightSideCon contact'>

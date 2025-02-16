@@ -1,8 +1,7 @@
 import React from 'react'
-import {FaBootstrap, FaCss3, FaDatabase, FaGit, FaGithub, FaHtml5, FaJava, FaNodeJs, FaPython, FaReact} from 'react-icons/fa';
+import {FaBootstrap, FaCss3, FaDatabase, FaFlask, FaGit, FaGithub, FaJava, FaNodeJs, FaPython, FaReact} from 'react-icons/fa';
 import {BiLogoJavascript,BiLogoMongodb} from 'react-icons/bi';
 import {RiTeamFill, RiTeamLine} from 'react-icons/ri';
-import { TbBrandNextjs } from "react-icons/tb";
 import { SiExpress, SiTailwindcss } from "react-icons/si";
 function Skills() {
     // const myskills=['HTML','CSS','PYTHON','JS','JAVA];
@@ -20,7 +19,7 @@ function Skills() {
             <li><BiLogoJavascript/><br/><span>JavaScript</span></li>
             <li><FaJava/><br/><span>Java</span></li>
             <li><FaPython/><br/><span>Python</span></li>
-            <li><FaHtml5/><br/><span>C++</span></li>
+            {/* <li><FaHtml5/><br/><span>C++</span></li> */}
             <li><FaCss3/><br/><span>HTML/CSS</span></li>
         </ul>
     </div>
@@ -28,8 +27,8 @@ function Skills() {
         <ul>
           <h4>Framwork/Tehcnologies:</h4>
             <li><FaReact/><br/><span>React</span></li>
-            <li><TbBrandNextjs /><br/><span>Next.js</span></li>
             <li><FaNodeJs/><br/><span>Node.js</span></li>
+            <li><FaFlask/><br/><span>Flask</span></li>
             <li><SiExpress/><br/><span>Express.js</span></li>
             <li><FaBootstrap/><br/><span>Bootstrap</span></li>
             <li><SiTailwindcss/><br/><span>Tailwindcss</span></li>
@@ -37,7 +36,7 @@ function Skills() {
     </div>
     <div className='grid-child'>
         <ul>
-          <h4>Databases</h4>
+          <h4>Databases:</h4>
             <li><FaDatabase/><br/><span>SQL</span></li>
             <li><BiLogoMongodb/><br/><span>Mongodb</span></li>
           </ul>
